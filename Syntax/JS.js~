@@ -1,0 +1,252 @@
+var x = 5;
+var y = 6;
+var z = x + y;
+
+/*
+JavaScript Literals
+The most important rules for writing fixed values are:
+
+Numbers are written with or without decimals:
+*/
+""
+10.50
+true
+null
+[]
+1001
+{first:"name"}
+/*
+Strings are text, written within double or single quotes:
+*/
+
+"John Doe"
+
+'John Doe'
+
+/*
+JavaScript uses arithmetic operators ( + - *  / ) to compute values:
+*/
+
+(5 + 6) * 10
+
+x * 10
+
+/*
+
+The values can be of various types, such as numbers and strings.
+
+For example, "John" + " " + "Doe", evaluates to "John Doe":
+*/
+
+"John" + " " + "Doe"
+
+/*
+
+JavaScript is Case Sensitive
+All JavaScript identifiers are case sensitive. 
+
+The variables lastName and lastname, are two different variables.
+JavaScript does not interpret VAR or Var as the keyword var.
+
+*/
+
+
+lastName = "Doe";
+lastname = "Peterson";
+
+
+/*
+
+Semicolons ;
+Semicolons separate JavaScript statements.
+
+Add a semicolon at the end of each executable statement:
+
+
+*/
+
+
+a = 5;
+b = 6;
+c = a + b;
+/*
+For best readability, programmers often like to avoid code lines longer than 80 characters.
+If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
+
+Example
+*/
+document.getElementById("demo").innerHTML =
+"Hello Dolly.";
+
+
+----
+
+/*
+This example uses a single line comment at the end of each line, to explain the code:
+
+Example
+*/
+
+var x = 5;      // Declare x, give it the value of 5
+var y = x + 2;  // Declare y, give it the value of x + 2
+Try it yourself »
+Multi-line Comments
+
+
+
+
+
+
+/*
+
+JavaScript Keywords
+JavaScript statements often start with a keyword to identify the JavaScript action to be performed.
+
+Here is a list of some of the keywords you will learn about in this tutorial:
+
+Keyword	Description
+break	Terminates a switch or a loop
+continue	Jumps out of a loop and starts at the top
+debugger	Stops the execution of JavaScript, and calls (if available) the debugging function
+do ... while	Executes a block of statements, and repeats the block, while a condition is true
+for	Marks a block of statements to be executed, as long as a condition is true
+function	Declares a function
+if ... else	Marks a block of statements to be executed, depending on a condition
+return	Exits a function
+switch	Marks a block of statements to be executed, depending on different cases
+try ... catch	Implements error handling to a block of statements
+var	Declares a variable
+Note	JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.
+
+*/
+---
+
+/*
+Declaring (Creating) JavaScript Variables
+Creating a variable in JavaScript is called "declaring" a variable.
+
+You declare a JavaScript variable with the var keyword:
+*/
+var carName;
+// After the declaration, the variable has no value. (Technically it has the value of undefined)
+
+// To assign a value to the variable, use the equal sign:
+
+carName = "Volvo";
+
+
+
+/*
+In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+A variable declared without a value will have the value undefined.
+
+The variable carName will have the value undefined after the execution of this statement:
+
+The variable carName will still have the value "Volvo" after the execution of these statements:
+*/
+
+Example
+var carName = "Volvo";
+var carName;
+
+
+/*
+
+Also try this:
+
+Example
+
+*/
+
+var x = "5" + 2 + 3;
+
+/*
+
+
+JavaScript Type Operators
+Operator	Description
+typeof	Returns the type of a variable
+instanceof	Returns true if an object is an instance of an object type
+
+
+*/
+
+/*
+
+
+
+=== (!=) ==
+
+
+*/
+
+null === undefined           // false
+null == undefined            // true
+
+
+
+/*
+functiones
+*/
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+
+var x = myFunction(4, 3);        // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+    return a * b;                // Function returns the product of a and b
+}
+
+
+/*
+
+
+Mas Objetos
+
+*/
+
+
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};
+
+objectName.propertyName
+
+
+/*
+
+// scope
+
+*/
+
+
+function myFunction() {
+    carName = "Volvo";
+
+    // code here can use carName
+
+}
+
+
+/*
+
+Metodos comunes en strings
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+
+
+http://www.w3schools.com/js/js_string_methods.asp
+
+*/
